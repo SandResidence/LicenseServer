@@ -16,7 +16,7 @@ public class User {
         this.expire = expire;
     }
 
-    public boolean validatePassword(String input) {
+    public boolean isPasswordValid(String input) {
         return input.equals(password);
     }
 

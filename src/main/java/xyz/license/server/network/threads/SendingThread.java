@@ -6,7 +6,6 @@ import xyz.license.server.network.PacketRegistry;
 import xyz.license.server.network.streams.CustomOutputStream;
 import xyz.license.server.server.Connection;
 
-import java.io.DataOutputStream;
 import java.util.ArrayList;
 import java.util.List;
 

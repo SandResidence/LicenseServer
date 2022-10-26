@@ -5,8 +5,6 @@ import xyz.license.server.network.PacketRegistry;
 import xyz.license.server.network.streams.CustomInputStream;
 import xyz.license.server.server.Connection;
 
-import java.io.DataInputStream;
-
 public class ReceivingThread implements Runnable {
 
     private final Connection connection;

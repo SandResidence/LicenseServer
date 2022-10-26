@@ -26,12 +26,12 @@ public class ValidationRequestPacket extends Packet {
     public void read(CustomInputStream stream) throws IOException {
 
         Connection.ValidationData data = connection.getValidationData();
-        User user = LicenseSystem.getUsersManager().getUser(data.getLogin());
+        User user = LicenseSystem.getUsersRepository().getUser(data.getLogin());
 
         ValidationStatus result = null;
         if (!isTimestampValid())
             result = ValidationStatus.BAD_TIMESTAMP;
-        if (user == null || user.validatePassword(data.getPassword()))
+        if (user == null || user.isPasswordValid(data.getPassword()))
             result = ValidationStatus.INVALID_USER_DATA;
         if (user.isExpired())
             result = ValidationStatus.EXPIRED_LICENSE;

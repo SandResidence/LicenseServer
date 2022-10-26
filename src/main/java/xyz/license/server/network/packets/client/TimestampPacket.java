@@ -1,14 +1,11 @@
 package xyz.license.server.network.packets.client;
 
 import xyz.license.server.LicenseSystem;
-import xyz.license.server.crypto.RSAUtils;
 import xyz.license.server.network.Packet;
 import xyz.license.server.network.streams.CustomInputStream;
 import xyz.license.server.network.streams.CustomOutputStream;
 import xyz.license.server.server.Connection;
 
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
 import java.io.IOException;
 import java.security.PrivateKey;
 

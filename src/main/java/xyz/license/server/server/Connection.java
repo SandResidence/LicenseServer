@@ -7,8 +7,6 @@ import xyz.license.server.network.streams.CustomOutputStream;
 import xyz.license.server.network.threads.ReceivingThread;
 import xyz.license.server.network.threads.SendingThread;
 
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
 import java.net.Socket;
 
 @Getter

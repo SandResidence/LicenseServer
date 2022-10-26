@@ -5,10 +5,10 @@ import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 import java.util.List;
 
-public class UsersManager {
+public class UsersRepository {
     private final List<User> users;
 
-    public UsersManager() {
+    public UsersRepository() {
         this.users = new ArrayList<>();
         loadUsers();
     }
